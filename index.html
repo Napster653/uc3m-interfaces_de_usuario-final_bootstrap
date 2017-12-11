@@ -26,20 +26,45 @@
 				</form>
 				<ul class="navbar-nav">
 					<li class="nav-item dropdown show">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<a class="nav-link dropdown-toggle" href="#" id="pv--dropdown-settings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<i class="icon ion-gear-b mr-2"></i>Settings
 						</a>
-						<div class="dropdown-menu" aria-labelledby="pv--dropdown-navbar">
+						<div class="dropdown-menu" aria-labelledby="pv--dropdown-settings">
 							<a class="dropdown-item" href="#"><i class="icon ion-ios-moon mr-3"></i>Night mode</a>
 							<a class="dropdown-item" href="#"><i class="icon ion-gear-b mr-3"></i>Advanced</a>
 							<a class="dropdown-item" href="#"><i class="icon ion-help-circled mr-3"></i>Help</a>
 						</div>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#"><i class="icon ion-log-in mr-2"></i>Log in</a>
+					<li class="nav-item dropdown show">
+						<a class="nav-link" href="#" id="pv--dropdown-login" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="icon ion-log-in mr-2"></i>Log in
+						</a>
+						<div class="dropdown-menu dropdown-menu-right pv--dropdown-wide" aria-labelledby="pv--dropdown-login">
+							<form class="px-4 py-3">
+								<div class="form-group">
+									<label for="pv--login-email">Email address</label>
+									<input type="email" class="form-control" id="pv--login-email" placeholder="email@example.com">
+								</div>
+								<div class="form-group">
+									<label for="pv--login-password">Password</label>
+									<input type="password" class="form-control" id="pv--login-password" placeholder="Password">
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input">
+										Remember me
+									</label>
+								</div>
+								<button type="submit" class="btn btn-primary">Sign in</button>
+							</form>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Forgot password?</a>
+						</div>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#"><i class="icon ion-person-add mr-2"></i>Sign up</a>
+					<li class="nav-item dropdown show">
+						<a class="nav-link" href="#">
+							<i class="icon ion-person-add mr-2"></i>Sign up
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -48,40 +73,169 @@
 
 	<div class="container-fluid">
 		<div class="row">
+
 			<nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
 				<ul class="nav nav-pills flex-column">
 					<li class="nav-item">
 						<a class="nav-link" disabled><h5>Categories</h5></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" href="#"><i class="icon ion-pound ml-4 mr-2"></i>Trending<span class="sr-only">(current)</span></a>
+						<a class="nav-link active" href="#"><i class="icon ion-pound mr-2"></i>Trending<span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#"><i class="icon ion-ios-game-controller-b ml-4 mr-2"></i>Gaming</a>
+						<a class="nav-link" href="#"><i class="icon ion-ios-game-controller-b mr-2"></i>Gaming</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#"><i class="icon ion-music-note ml-4 mr-2"></i>Music</a>
+						<a class="nav-link" href="#"><i class="icon ion-music-note mr-2"></i>Music</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#"><i class="icon ion-ios-monitor-outline ml-4 mr-2"></i>Tech</a>
+						<a class="nav-link" href="#"><i class="icon ion-ios-monitor-outline mr-2"></i>Tech</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#"><i class="icon ion-more ml-4 mr-2"></i>etc</a>
+						<a class="nav-link" href="#"><i class="icon ion-more mr-2"></i>etc</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#"><i class="icon ion-more ml-4 mr-2"></i>etc</a>
+						<a class="nav-link" href="#"><i class="icon ion-more mr-2"></i>etc</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#"><i class="icon ion-more ml-4 mr-2"></i>etc</a>
+						<a class="nav-link" href="#"><i class="icon ion-more mr-2"></i>etc</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#"><i class="icon ion-more ml-4 mr-2"></i>etc</a>
+						<a class="nav-link" href="#"><i class="icon ion-more mr-2"></i>etc</a>
 					</li>
 				</ul>
 			</nav>
 
 			<main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+				<section class="row text-center my-4">
+					<h2 class="col-10 offset-md-1 text-left mb-3">Trending in your area</h2>
 
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 offset-xl-1 px-2">
+						<a href="#">
+							<img src="http://via.placeholder.com/400x200" class="img-fluid">
+							<h4 class="text-left pv--truncate-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sagittis lobortis. Ut vehicula consequat elit non rhoncus. Duis tellus.</h4>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-2">
+						<a href="#">
+							<img src="http://via.placeholder.com/400x200" class="img-fluid">
+							<h4 class="text-left pv--truncate-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sagittis lobortis. Ut vehicula consequat elit non rhoncus. Duis tellus.</h4>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-2">
+						<a href="#">
+							<img src="http://via.placeholder.com/400x200" class="img-fluid">
+							<h4 class="text-left pv--truncate-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sagittis lobortis. Ut vehicula consequat elit non rhoncus. Duis tellus.</h4>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-2">
+						<a href="#">
+							<img src="http://via.placeholder.com/400x200" class="img-fluid">
+							<h4 class="text-left pv--truncate-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sagittis lobortis. Ut vehicula consequat elit non rhoncus. Duis tellus.</h4>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-2">
+						<a href="#">
+							<img src="http://via.placeholder.com/400x200" class="img-fluid">
+							<h4 class="text-left pv--truncate-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sagittis lobortis. Ut vehicula consequat elit non rhoncus. Duis tellus.</h4>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 offset-xl-1 px-2">
+						<a href="#">
+							<img src="http://via.placeholder.com/400x200" class="img-fluid">
+							<h4 class="text-left pv--truncate-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sagittis lobortis. Ut vehicula consequat elit non rhoncus. Duis tellus.</h4>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-2">
+						<a href="#">
+							<img src="http://via.placeholder.com/400x200" class="img-fluid">
+							<h4 class="text-left pv--truncate-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sagittis lobortis. Ut vehicula consequat elit non rhoncus. Duis tellus.</h4>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-2">
+						<a href="#">
+							<img src="http://via.placeholder.com/400x200" class="img-fluid">
+							<h4 class="text-left pv--truncate-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sagittis lobortis. Ut vehicula consequat elit non rhoncus. Duis tellus.</h4>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-2">
+						<a href="#">
+							<img src="http://via.placeholder.com/400x200" class="img-fluid">
+							<h4 class="text-left pv--truncate-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sagittis lobortis. Ut vehicula consequat elit non rhoncus. Duis tellus.</h4>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-2">
+						<a href="#">
+							<img src="http://via.placeholder.com/400x200" class="img-fluid">
+							<h4 class="text-left pv--truncate-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sagittis lobortis. Ut vehicula consequat elit non rhoncus. Duis tellus.</h4>
+						</a>
+					</div>
+				</section>
+
+				<section class="row text-center my-4">
+					<h2 class="col-10 offset-md-1 text-left mb-3">Trending worldwide</h2>
+
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 offset-xl-1 px-2">
+						<a href="#">
+							<img src="http://via.placeholder.com/400x200" class="img-fluid">
+							<h4 class="text-left pv--truncate-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sagittis lobortis. Ut vehicula consequat elit non rhoncus. Duis tellus.</h4>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-2">
+						<a href="#">
+							<img src="http://via.placeholder.com/400x200" class="img-fluid">
+							<h4 class="text-left pv--truncate-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sagittis lobortis. Ut vehicula consequat elit non rhoncus. Duis tellus.</h4>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-2">
+						<a href="#">
+							<img src="http://via.placeholder.com/400x200" class="img-fluid">
+							<h4 class="text-left pv--truncate-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sagittis lobortis. Ut vehicula consequat elit non rhoncus. Duis tellus.</h4>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-2">
+						<a href="#">
+							<img src="http://via.placeholder.com/400x200" class="img-fluid">
+							<h4 class="text-left pv--truncate-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sagittis lobortis. Ut vehicula consequat elit non rhoncus. Duis tellus.</h4>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-2">
+						<a href="#">
+							<img src="http://via.placeholder.com/400x200" class="img-fluid">
+							<h4 class="text-left pv--truncate-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sagittis lobortis. Ut vehicula consequat elit non rhoncus. Duis tellus.</h4>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 offset-xl-1 px-2">
+						<a href="#">
+							<img src="http://via.placeholder.com/400x200" class="img-fluid">
+							<h4 class="text-left pv--truncate-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sagittis lobortis. Ut vehicula consequat elit non rhoncus. Duis tellus.</h4>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-2">
+						<a href="#">
+							<img src="http://via.placeholder.com/400x200" class="img-fluid">
+							<h4 class="text-left pv--truncate-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sagittis lobortis. Ut vehicula consequat elit non rhoncus. Duis tellus.</h4>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-2">
+						<a href="#">
+							<img src="http://via.placeholder.com/400x200" class="img-fluid">
+							<h4 class="text-left pv--truncate-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sagittis lobortis. Ut vehicula consequat elit non rhoncus. Duis tellus.</h4>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-2">
+						<a href="#">
+							<img src="http://via.placeholder.com/400x200" class="img-fluid">
+							<h4 class="text-left pv--truncate-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sagittis lobortis. Ut vehicula consequat elit non rhoncus. Duis tellus.</h4>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-2">
+						<a href="#">
+							<img src="http://via.placeholder.com/400x200" class="img-fluid">
+							<h4 class="text-left pv--truncate-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sagittis lobortis. Ut vehicula consequat elit non rhoncus. Duis tellus.</h4>
+						</a>
+					</div>
+				</section>
 			</main>
 		</div>		
 	</div>
