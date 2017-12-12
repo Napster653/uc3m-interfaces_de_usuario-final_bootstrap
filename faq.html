@@ -12,179 +12,182 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
-		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="index.html">Power Videos</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<form class="form-inline mx-2 my-lg-0 mr-auto">
-					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				</form>
-				<ul class="navbar-nav">
-					<li class="nav-item dropdown show">
-						<a class="nav-link dropdown-toggle" href="#" id="pv--dropdown-settings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="icon ion-gear-b mr-2"></i>Settings
-						</a>
-						<div class="dropdown-menu" aria-labelledby="pv--dropdown-settings">
-							<a class="dropdown-item" href="#"><i class="icon ion-ios-moon mr-3"></i>Night mode</a>
-							<a class="dropdown-item" href="#"><i class="icon ion-gear-b mr-3"></i>Advanced</a>
-							<a class="dropdown-item" href="#"><i class="icon ion-help-circled mr-3"></i>Help</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown show">
-						<a class="nav-link" href="#" id="pv--dropdown-login" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="icon ion-log-in mr-2"></i>Log in
-						</a>
-						<div class="dropdown-menu dropdown-menu-right pv--dropdown-wide" aria-labelledby="pv--dropdown-login">
-							<form class="px-4 py-3">
-								<div class="form-group">
-									<label for="pv--login-email">Email address</label>
-									<input type="email" class="form-control" id="pv--login-email" placeholder="email@example.com">
-								</div>
-								<div class="form-group">
-									<label for="pv--login-password">Password</label>
-									<input type="password" class="form-control" id="pv--login-password" placeholder="Password">
-								</div>
-								<div class="form-check">
-									<label class="form-check-label">
-										<input type="checkbox" class="form-check-input">
-										Remember me
-									</label>
-								</div>
-								<button type="submit" class="btn btn-primary">Sign in</button>
-							</form>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Forgot password?</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown show">
-						<a class="nav-link" href="register.html">
-							<i class="icon ion-person-add mr-2"></i>Sign up
-						</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</header>
+	<div id="holder">
+		<header>
+			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="index.html">Power Videos</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<form class="form-inline mx-2 my-lg-0 mr-auto">
+						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					</form>
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown show">
+							<a class="nav-link dropdown-toggle" href="#" id="pv--dropdown-settings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="icon ion-gear-b mr-2"></i>Settings
+							</a>
+							<div class="dropdown-menu" aria-labelledby="pv--dropdown-settings">
+								<a class="dropdown-item" href="#"><i class="icon ion-ios-moon mr-3"></i>Night mode</a>
+								<a class="dropdown-item" href="#"><i class="icon ion-gear-b mr-3"></i>Advanced</a>
+								<a class="dropdown-item" href="#"><i class="icon ion-help-circled mr-3"></i>Help</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown show">
+							<a class="nav-link" href="#" id="pv--dropdown-login" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="icon ion-log-in mr-2"></i>Log in
+							</a>
+							<div class="dropdown-menu dropdown-menu-right pv--dropdown-wide" aria-labelledby="pv--dropdown-login">
+								<form class="px-4 py-3">
+									<div class="form-group">
+										<label for="pv--login-email">Email address</label>
+										<input type="email" class="form-control" id="pv--login-email" placeholder="email@example.com">
+									</div>
+									<div class="form-group">
+										<label for="pv--login-password">Password</label>
+										<input type="password" class="form-control" id="pv--login-password" placeholder="Password">
+									</div>
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input">
+											Remember me
+										</label>
+									</div>
+									<button type="submit" class="btn btn-primary">Sign in</button>
+								</form>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Forgot password?</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown show">
+							<a class="nav-link" href="register.html">
+								<i class="icon ion-person-add mr-2"></i>Sign up
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
 
-	<div class="container-fluid">
-		<br>
-		<h1 class="display-4 text-center mb-4">Frequently asked questions</h1>
-		<div id="accordion" role="tablist">
-			<div class="card">
-				<a class="card-header" role="tab" id="pv--heading-01" data-toggle="collapse" href="#pv--faq-01" aria-expanded="false" aria-controls="pv--faq-01">
-					<h5 class="mb-0">
-						<i class="icon ion-plus-round mr-2"></i>Question 1
-					</h5>
-				</a>
-				<div id="pv--faq-01" class="collapse" role="tabpanel" aria-labelledby="pv--heading-01" data-parent="#accordion">
-					<div class="card-body">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		<div class="container-fluid" style="padding-bottom: 184px;">
+			<br>
+			<h1 class="display-4 text-center mb-4">Frequently asked questions</h1>
+			<div id="accordion" role="tablist">
+				<div class="card">
+					<a class="card-header" role="tab" id="pv--heading-01" data-toggle="collapse" href="#pv--faq-01" aria-expanded="false" aria-controls="pv--faq-01">
+						<h5 class="mb-0">
+							<i class="icon ion-plus-round mr-2"></i>Question 1
+						</h5>
+					</a>
+					<div id="pv--faq-01" class="collapse" role="tabpanel" aria-labelledby="pv--heading-01" data-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<a class="card-header" role="tab" id="pv--heading-02" data-toggle="collapse" href="#pv--faq-02" aria-expanded="false" aria-controls="pv--faq-02">
+						<h5 class="mb-0">
+							<i class="icon ion-plus-round mr-2"></i>Question 2
+						</h5>
+					</a>
+					<div id="pv--faq-02" class="collapse" role="tabpanel" aria-labelledby="pv--heading-02" data-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<a class="card-header" role="tab" id="pv--heading-03" data-toggle="collapse" href="#pv--faq-03" aria-expanded="false" aria-controls="pv--faq-03">
+						<h5 class="mb-0">
+							<i class="icon ion-plus-round mr-2"></i>Question 3
+						</h5>
+					</a>
+					<div id="pv--faq-03" class="collapse" role="tabpanel" aria-labelledby="pv--heading-03" data-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<a class="card-header" role="tab" id="pv--heading-04" data-toggle="collapse" href="#pv--faq-04" aria-expanded="false" aria-controls="pv--faq-04">
+						<h5 class="mb-0">
+							<i class="icon ion-plus-round mr-2"></i>Question 4
+						</h5>
+					</a>
+					<div id="pv--faq-04" class="collapse" role="tabpanel" aria-labelledby="pv--heading-04" data-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<a class="card-header" role="tab" id="pv--heading-05" data-toggle="collapse" href="#pv--faq-05" aria-expanded="false" aria-controls="pv--faq-05">
+						<h5 class="mb-0">
+							<i class="icon ion-plus-round mr-2"></i>Question 5
+						</h5>
+					</a>
+					<div id="pv--faq-05" class="collapse" role="tabpanel" aria-labelledby="pv--heading-05" data-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<a class="card-header" role="tab" id="pv--heading-06" data-toggle="collapse" href="#pv--faq-06" aria-expanded="false" aria-controls="pv--faq-06">
+						<h5 class="mb-0">
+							<i class="icon ion-plus-round mr-2"></i>Question 6
+						</h5>
+					</a>
+					<div id="pv--faq-06" class="collapse" role="tabpanel" aria-labelledby="pv--heading-06" data-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<a class="card-header" role="tab" id="pv--heading-07" data-toggle="collapse" href="#pv--faq-07" aria-expanded="false" aria-controls="pv--faq-07">
+						<h5 class="mb-0">
+							<i class="icon ion-plus-round mr-2"></i>Question 7
+						</h5>
+					</a>
+					<div id="pv--faq-07" class="collapse" role="tabpanel" aria-labelledby="pv--heading-07" data-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<a class="card-header" role="tab" id="pv--heading-08" data-toggle="collapse" href="#pv--faq-08" aria-expanded="false" aria-controls="pv--faq-08">
+						<h5 class="mb-0">
+							<i class="icon ion-plus-round mr-2"></i>Question 8
+						</h5>
+					</a>
+					<div id="pv--faq-08" class="collapse" role="tabpanel" aria-labelledby="pv--heading-08" data-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="card">
-				<a class="card-header" role="tab" id="pv--heading-02" data-toggle="collapse" href="#pv--faq-02" aria-expanded="false" aria-controls="pv--faq-02">
-					<h5 class="mb-0">
-						<i class="icon ion-plus-round mr-2"></i>Question 2
-					</h5>
-				</a>
-				<div id="pv--faq-02" class="collapse" role="tabpanel" aria-labelledby="pv--heading-02" data-parent="#accordion">
-					<div class="card-body">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<a class="card-header" role="tab" id="pv--heading-03" data-toggle="collapse" href="#pv--faq-03" aria-expanded="false" aria-controls="pv--faq-03">
-					<h5 class="mb-0">
-						<i class="icon ion-plus-round mr-2"></i>Question 3
-					</h5>
-				</a>
-				<div id="pv--faq-03" class="collapse" role="tabpanel" aria-labelledby="pv--heading-03" data-parent="#accordion">
-					<div class="card-body">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<a class="card-header" role="tab" id="pv--heading-04" data-toggle="collapse" href="#pv--faq-04" aria-expanded="false" aria-controls="pv--faq-04">
-					<h5 class="mb-0">
-						<i class="icon ion-plus-round mr-2"></i>Question 4
-					</h5>
-				</a>
-				<div id="pv--faq-04" class="collapse" role="tabpanel" aria-labelledby="pv--heading-04" data-parent="#accordion">
-					<div class="card-body">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<a class="card-header" role="tab" id="pv--heading-05" data-toggle="collapse" href="#pv--faq-05" aria-expanded="false" aria-controls="pv--faq-05">
-					<h5 class="mb-0">
-						<i class="icon ion-plus-round mr-2"></i>Question 5
-					</h5>
-				</a>
-				<div id="pv--faq-05" class="collapse" role="tabpanel" aria-labelledby="pv--heading-05" data-parent="#accordion">
-					<div class="card-body">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<a class="card-header" role="tab" id="pv--heading-06" data-toggle="collapse" href="#pv--faq-06" aria-expanded="false" aria-controls="pv--faq-06">
-					<h5 class="mb-0">
-						<i class="icon ion-plus-round mr-2"></i>Question 6
-					</h5>
-				</a>
-				<div id="pv--faq-06" class="collapse" role="tabpanel" aria-labelledby="pv--heading-06" data-parent="#accordion">
-					<div class="card-body">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<a class="card-header" role="tab" id="pv--heading-07" data-toggle="collapse" href="#pv--faq-07" aria-expanded="false" aria-controls="pv--faq-07">
-					<h5 class="mb-0">
-						<i class="icon ion-plus-round mr-2"></i>Question 7
-					</h5>
-				</a>
-				<div id="pv--faq-07" class="collapse" role="tabpanel" aria-labelledby="pv--heading-07" data-parent="#accordion">
-					<div class="card-body">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<a class="card-header" role="tab" id="pv--heading-08" data-toggle="collapse" href="#pv--faq-08" aria-expanded="false" aria-controls="pv--faq-08">
-					<h5 class="mb-0">
-						<i class="icon ion-plus-round mr-2"></i>Question 8
-					</h5>
-				</a>
-				<div id="pv--faq-08" class="collapse" role="tabpanel" aria-labelledby="pv--heading-08" data-parent="#accordion">
-					<div class="card-body">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					</div>
-				</div>
-			</div>
+			<br>
 		</div>
+
+		<footer class="text-muted bg-dark" style="overflow: hidden; position: absolute; bottom: 0; width: 100% ; height: 184px;">
+			<div class="container">
+				<p class="float-right">
+					<br>
+					<a href="#">Back to top</a>
+				</p>
+				<p class="mt-4 mb-1"><a href="aboutus.html">About us</a></p>
+				<p class="mb-1"><a href="faq.html">Frequently asked questions (FAQ)</a></p>
+				<p class="mb-1"><a href="tos.html">Terms of service</a></p>
+				<p class="mb-1">Created with ♥ using <a href="https://getbootstrap.com/">Bootstrap v4.0.0-beta.2</a></p>
+				<p class="mb-4">Icons: <a href="http://ionicons.com/">http://ionicons.com/</a></p>
+			</div>
+		</footer>
 	</div>
-
-	<footer class="text-muted bg-dark" style="overflow: hidden; position: absolute; bottom: 0; left: 0; right: 0;">
-		<div class="container">
-			<p class="float-right">
-				<br>
-				<a href="#">Back to top</a>
-			</p>
-			<p class="mt-4 mb-1"><a href="aboutus.html">About us</a></p>
-			<p class="mb-1"><a href="faq.html">Frequently asked questions (FAQ)</a></p>
-			<p class="mb-1"><a href="tos.html">Terms of service</a></p>
-			<p class="mb-1">Created with ♥ using <a href="https://getbootstrap.com/">Bootstrap v4.0.0-beta.2</a></p>
-			<p class="mb-4">Icons: <a href="http://ionicons.com/">http://ionicons.com/</a></p>
-		</div>
-	</footer>
 	
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

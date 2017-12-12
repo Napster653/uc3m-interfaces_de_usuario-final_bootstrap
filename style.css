@@ -1,8 +1,17 @@
+html
+{
+	height: 100%;
+}
 body
 {
 	padding-top: 3.5rem;
+	height: 100%;
 }
-
+#holder
+{
+	min-height: 100%;
+	position: relative;
+}
 .sidebar
 {
 	position: fixed;
